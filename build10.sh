@@ -1,0 +1,5 @@
+rsync -r "${SRC_DIR}/src/" "${SP_DIR}"
+mkdir -p "${PREFIX}/share/systemd/user"
+rsync -r "${SRC_DIR}/systemd/" "${PREFIX}/share/systemd/user"
+mkdir -p "${PREFIX}/share/UnifiedMETDownloader"
+rsync -r "${SRC_DIR}/config/" "${PREFIX}/share/UnifiedMETDownloader"
